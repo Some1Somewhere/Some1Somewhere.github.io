@@ -7,8 +7,9 @@ import {
   meta,
   worktimeline,
   skills,
-  services,
 } from "../../content_option";
+import { Fade } from "react-awesome-reveal";
+
 
 export const About = () => {
   return (
@@ -25,21 +26,24 @@ export const About = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
+        <Fade>
         <Row className="sec_sp">
-          <Col lg="5">
+          <Col lg="3">
             <h3 className="color_sec py-4">{dataabout.title}</h3>
           </Col>
-          <Col lg="7" className="d-flex align-items-center">
+          <Col lg="9" className="d-flex align-items-center">
             <div>
               <p>{dataabout.aboutme}</p>
             </div>
           </Col>
         </Row>
+        </Fade>
+        <Fade>
         <Row className=" sec_sp">
-          <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+          <Col lg="3">
+            <h3 className="color_sec py-4">What have I done?</h3>
           </Col>
-          <Col lg="7">
+          <Col lg="9">
             <table className="table caption-top">
               <tbody>
                 {worktimeline.map((data, i) => {
@@ -55,45 +59,23 @@ export const About = () => {
             </table>
           </Col>
         </Row>
+        </Fade>
+        <Fade>
         <Row className="sec_sp">
-          <Col lg="5">
+          <Col lg="3">
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
-          <Col lg="7">
-            {skills.map((data, i) => {
-              return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </Col>
+          <Col lg="9" className="skills-container">
+  {skills.map((data, i) => {
+    return (
+      <img key={i} className="skill-badge" alt={data.name} src={data.badgeUrl} />
+    );
+  })}
+</Col>
+
         </Row>
-        <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
-          </Col>
-          <Col lg="7">
-            {services.map((data, i) => {
-              return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
-                </div>
-              );
-            })}
-          </Col>
-        </Row>
+        </Fade>
+
       </Container>
     </HelmetProvider>
   );

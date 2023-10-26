@@ -98,3 +98,18 @@
         transform: translateZ(0);
     }
 }
+
+.skills-container {
+    display: flex;
+    justify-content: space-between; /* Spacing between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if they don't fit */
+  }
+  
+  .skill-badge {
+    margin: 5px; /* Adjust as needed for space between badges */
+  }
+  
+  #work-sentinel, #skills-sentinel {
+    height: 1px;
+    width: 100%;
+}
