@@ -39,7 +39,7 @@ const Headermain = () => {
                   </li>
                   <li className="menu_item">
                   
-                    <Link  onClick={handleToggle} to={`url(${require('../assets/resume/Shetty Dhruv Resume US.pdf')})`.default} className="my-3"> Resume</Link>
+                  <a href="resume/Shetty Dhruv Resume US.pdf" target="_blank" rel="noreferrer" className="my-3"> Resume</a>
                   </li>
                   <li className="menu_item">
                   <Link onClick={handleToggle} to="/about" className="my-3">About</Link>

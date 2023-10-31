@@ -42,14 +42,14 @@ export const Home = () => {
                 <p className="mb-0x">{introdata.description2}</p>
                 <p className="mb-1x">{introdata.description3}</p>
                 <div className="intro_btn-action pb-5">
-                  <Link to={`${require('../../assets/resume/Shetty Dhruv Resume US.pdf')}`} className="text_2">
+                  <a href="resume/Shetty Dhruv Resume US.pdf" target="_blank" rel="noreferrer" className="text_2">
                     <div id="button_p" className="ac_btn btn ">
                       My Resume
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
                     </div>
-                  </Link>
+                  </a>
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
                       Contact Me
