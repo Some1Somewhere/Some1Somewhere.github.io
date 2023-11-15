@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import withRouter from "../hooks/withRouter"
 import { Home } from "../pages/home";
 import { Portfolio } from "../pages/portfolio";
@@ -8,6 +8,7 @@ import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from "react";
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>

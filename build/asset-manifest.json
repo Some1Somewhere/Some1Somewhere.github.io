@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e74e9a61.css",
+    "main.js": "/static/js/main.fa2ddaca.js",
+    "static/media/dhruv1.jpg": "/static/media/dhruv1.c145ddd965e5a26eab92.jpg",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.e74e9a61.css",
+    "static/js/main.fa2ddaca.js"
+  ]
+}
