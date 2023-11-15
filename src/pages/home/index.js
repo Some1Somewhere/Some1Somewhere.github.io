@@ -34,7 +34,8 @@ export const Home = () => {
                       ],
                       autoStart: true,
                       loop: true,
-                      deleteSpeed: 12,
+                      deleteSpeed: 8,
+                      delay: 30
                     }}
                   />
                 </h1>
@@ -42,14 +43,14 @@ export const Home = () => {
                 <p className="mb-0x">{introdata.description2}</p>
                 <p className="mb-1x">{introdata.description3}</p>
                 <div className="intro_btn-action pb-5">
-                  <a href="resume/Shetty Dhruv Resume US.pdf" target="_blank" rel="noreferrer" className="text_2">
+                  <Link to="/resume">
                     <div id="button_p" className="ac_btn btn ">
                       My Resume
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
                     </div>
-                  </a>
+                  </Link>
                   <Link to="/contact">
                     <div id="button_h" className="ac_btn btn">
                       Contact Me
