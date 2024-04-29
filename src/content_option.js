@@ -13,14 +13,18 @@ const introdata = {
     fourth: "I masterfully solve complex problems",
   },
   description1: "Entreprenuer, Full Stack Developer and Product Manager",
-  description2: "Love making life just a little bit easier, one innovation at a time",
+  description2: "Love making life a little bit easier, one innovation at a time",
 };
 
 const dataabout = {
   title: "Who am I?",
-  aboutme: "Pursuing a master's degree in Computing, Entrepreneurship and Innovation from New York University, I am developing my skillset in Product Development, Management and Entrepreneurship. I weirdly like having problems, because they constantly are an inspiration to build better solutions. Technology has made life so much easier, so I learn as many different skills as possible to contribute to this ease, picking up on new ones very quickly. I have worked on multiple projects in the past either independantly, or through my startup (Pyramid Developers), which aims to provide a platform for students to learn and build projects. I am also a Teaching Assistant at NYU for the course 'DevOps and Agile Methodologies' by John Rofrano.",
-};
+  aboutme: "Having recently graduated from New York University with a Master of Science in Computing, Entrepreneurship, and Innovation, I am now channeling my expertise into building Snacc, an AI-enabled wellness tracker. My passion for problem-solving inspires me to develop innovative solutions that enhance everyday life. With a knack for rapidly acquiring new skills, I have successfully led multiple projects both independently and through my startup, Pyramid Developers, which fosters a learning and development platform for students. As a former Teaching Assistant for the course 'DevOps and Agile Methodologies' at NYU, I bring a robust understanding of efficient software development practices to my current endeavor. At Snacc, I am committed to driving health and wellness forward through cutting-edge technology, aiming to improve the quality of life for our users."};
 const worktimeline = [
+  {
+    jobtitle: "Co-Founder",
+    where: "Snacc",
+    date: "Febuary 2024 - Present",
+  },
   {
     jobtitle: "Teaching Assistant",
     where: "New York University",
@@ -28,7 +32,7 @@ const worktimeline = [
   }, {
     jobtitle: "Founder",
     where: "Pyramid Developers",
-    date: "Arpil 2020 - ",
+    date: "January 2020 - Present",
   },
   {
     jobtitle: "Research and Development Engineer",
@@ -91,10 +95,6 @@ const skills = [
     badgeUrl: "https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"
   },
   {
-    name: "Angular",
-    badgeUrl: "https://img.shields.io/badge/angular-%23DD0031.svg?&style=for-the-badge&logo=angular&logoColor=white"
-  },
-  {
     name: "Go",
     badgeUrl: "https://img.shields.io/badge/Go-blue.svg?&style=for-the-badge&logo=go&logoColor=white"
   }
@@ -105,7 +105,7 @@ const skills = [
 
 const dataportfolio = [{
   img: "/collision-prediction/scores.png",
-  description: "",
+  description: "NYU's Deep Learning Collision Prediction Project",
   link: "/collision-prediction",
 },
 {
