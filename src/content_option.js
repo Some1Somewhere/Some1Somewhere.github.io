@@ -1,7 +1,7 @@
 const logotext = "DKS";
 const meta = {
   title: "Dhruv Shetty",
-  description: "Entrepreneur and software maestro rooted in New York City, navigating the digital realm with an innovator's spirit.",
+  description: "Dhruv Shetty is a Product Manager and Full Stack Developer who loves building impactful products",
 };
 
 const introdata = {
@@ -177,20 +177,6 @@ const otherProjects = [
     isAppScreenshot: true
   },
   {
-    img: "/collision-prediction/scores.png",
-    title: "NYU's Deep Learning Collision Prediction Project",
-    description: "Deep learning project for predicting collisions",
-    link: "/collision-prediction",
-    info: "The model takes 11 consecutive images of objects (varying shape, color, and material) moving on a smooth white surface. The model must predict the segmentation mask of the scene after another 11 frames. We used a dual UNet model (WNet) to predict object positions accurately.",
-    scope: [
-      "Developed 'WNet,' a dual UNet AI model for predictive semantic segmentation.",
-      "Achieved 2nd place in NYU’s Machine Learning challenge with a 0.442 Jaccard index.",
-      "Enhanced model accuracy using autoregressive techniques.",
-      "Utilized HPC for efficient model running."
-    ],
-    isAppScreenshot: false
-  },
-  {
     img: require("./assets/images/portfolio/happyours.png"),
     title: "HappyOurs",
     description: "Help you discover the best bars and pubs in NYC",
@@ -214,6 +200,20 @@ const otherProjects = [
       "Boosted customer acquisition by 30% in the first quarter.",
       "Configured scalable AWS cloud computing environments.",
       "Achieved 99.99% uptime through continuous integration and deployment."
+    ],
+    isAppScreenshot: false
+  },
+  {
+    img: "/collision-prediction/scores.png",
+    title: "NYU's Deep Learning Collision Prediction Project",
+    description: "Deep learning project for predicting collisions",
+    link: "/collision-prediction",
+    info: "The model takes 11 consecutive images of objects (varying shape, color, and material) moving on a smooth white surface. The model must predict the segmentation mask of the scene after another 11 frames. We used a dual UNet model (WNet) to predict object positions accurately.",
+    scope: [
+      "Developed 'WNet,' a dual UNet AI model for predictive semantic segmentation.",
+      "Achieved 2nd place in NYU’s Machine Learning challenge with a 0.442 Jaccard index.",
+      "Enhanced model accuracy using autoregressive techniques.",
+      "Utilized HPC for efficient model running."
     ],
     isAppScreenshot: false
   }
