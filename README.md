@@ -9,7 +9,7 @@ I'm pursuing my Master's in **Computing, Entrepreneurship, and Innovation** at *
 
 <a href="https://pyramiddeveloper.com/" title="Pyramid Developers"><img img align="left"  src="WhiteLogoTransparent.png" width="80px"/></a>
 
-I lead **Pyramid Developers**, a tech haven where we craft software solutions that are high on efficiency yet low on cost.
+I'm the Lead Product Manager at **Pyramid Developers**, a tech haven where we help founders realise their dreams by crafting software solutions that are high on efficiency yet low on cost.
 
 <br>
 <br>

@@ -38,6 +38,9 @@ const Headermain = () => {
                     <Link onClick={handleToggle} to="/" className="my-3">Home</Link>
                   </li>
                   <li className="menu_item">
+                    <Link onClick={handleToggle} to="/portfolio" className="my-3">Portfolio</Link>
+                  </li>
+                  <li className="menu_item">
                     <Link onClick={handleToggle} to="/resume" className="my-3">Resume</Link>
                   </li>
                   <li className="menu_item">
