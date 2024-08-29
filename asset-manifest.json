@@ -1,12 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.e74e9a61.css",
-    "main.js": "/static/js/main.fa2ddaca.js",
+    "main.css": "/static/css/main.9c892c40.css",
+    "main.js": "/static/js/main.191d6bcc.js",
     "static/media/dhruv1.jpg": "/static/media/dhruv1.c145ddd965e5a26eab92.jpg",
+    "static/media/lucio.png": "/static/media/lucio.4e0d6778f78df5b402c5.png",
+    "static/media/trashtocash.png": "/static/media/trashtocash.23daf51071b13bd8bb69.png",
+    "static/media/enerman.png": "/static/media/enerman.57aef9b404f973ce5c8f.png",
+    "static/media/athena.png": "/static/media/athena.891c6e77a455cdf3feb4.png",
+    "static/media/maigrate.png": "/static/media/maigrate.aeef2daa6442f344b332.png",
+    "static/media/snacc.png": "/static/media/snacc.d2e9127fd884ea705683.png",
+    "static/media/happyours.png": "/static/media/happyours.63cde2e3803dc1e21286.png",
+    "static/media/pyramid.jpeg": "/static/media/pyramid.4119b866ee6c237c3193.jpeg",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.e74e9a61.css",
-    "static/js/main.fa2ddaca.js"
+    "static/css/main.9c892c40.css",
+    "static/js/main.191d6bcc.js"
   ]
 }
