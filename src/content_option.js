@@ -104,7 +104,7 @@ const skills = [
 const pyramidProjects = [
   {
     img: require("./assets/images/portfolio/athena.png"),
-    title: "Athena Gen",
+    projectTitle: "Athena Gen",
     description: "AI-powered Ad Creation Platform",
     link: "https://www.athenagen.ai/",
     info: "Athena is an AI-based Marketing Image Generator that allows users to generate 25-30 high-quality marketing images based on a provided concept or keyword. Users can also add templates and view previously generated results.",
@@ -118,7 +118,7 @@ const pyramidProjects = [
   },
   {
     img: require("./assets/images/portfolio/trashtocash.png"),
-    title: "Trash To Cash",
+    projectTitle: "Trash To Cash",
     description: "User, Partner, and Admin Applications for a Waste Management Company",
     link: "https://play.google.com/store/apps/details?id=com.pyramid.trashtocash",
     info: "Trash to Cash is a waste management solution in Bangalore, allowing users to book a partner to collect segregated waste in exchange for UPI compensation.",
@@ -133,7 +133,7 @@ const pyramidProjects = [
   },
   {
     img: require("./assets/images/portfolio/enerman.png"),
-    title: "Enerman",
+    projectTitle: "Enerman",
     description: "Solar Panel Information Dashboard",
     link: "https://play.google.com/store/apps/details?id=com.pyramid.enerman",
     info: "Enerman Technologies provides solutions for solar energy management. This app helps owners track power generation and energy collection over different periods.",
@@ -150,7 +150,7 @@ const pyramidProjects = [
 const otherProjects = [
   {
     img: require("./assets/images/portfolio/snacc.png"),
-    title: "Snacc",
+    projectTitle: "Snacc",
     description: "AI-powered Nutrition Guide and Wellness Tracker",
     link: "https://snacc.fit/get",
     info: "Snacc is a nutrition guide that uses AI to help you manage your diet. You can take photos or describe your meals, and Snacc will quickly show you the nutritional details like calories and nutrients.",
@@ -165,7 +165,7 @@ const otherProjects = [
   },
   {
     img: require("./assets/images/portfolio/lucio.png"),
-    title: "Lucio",
+    projectTitle: "Lucio",
     description: "Nightlife Recommendation Platform using Spotify Data",
     info: "Lucio is a platform that analyzes users' music preferences by connecting to their Spotify accounts and matches them with nightclubs, bars, and music venues that feature music and vibes they'll love. It also provides key information like reviews, cost of entry, and dress code to help users make informed decisions.",
     scope: [
@@ -178,7 +178,7 @@ const otherProjects = [
   },
   {
     img: require("./assets/images/portfolio/happyours.png"),
-    title: "HappyOurs",
+    projectTitle: "HappyOurs",
     description: "Help you discover the best bars and pubs in NYC",
     info: "HappyOurs is a mobile application that provides streamlined information about drinking establishments for people who are either new to the city or want to try out new places, making the process more efficient than existing methods like Google Maps or Yelp Reviews.",
     scope: [
@@ -191,7 +191,7 @@ const otherProjects = [
   },
   {
     img: require("./assets/images/portfolio/maigrate.png"),
-    title: "Maigrate",
+    projectTitle: "Maigrate",
     description: "No Code Platform to Create AI Agents",
     link: "https://www.maigrate.com/",
     info: "Maigrate is a no-code AI platform that simplifies the integration of AI copilots into existing products, saving time, resources, and costs.",
@@ -205,7 +205,7 @@ const otherProjects = [
   },
   {
     img: "/collision-prediction/scores.png",
-    title: "NYU's Deep Learning Collision Prediction Project",
+    projectTitle: "NYU's Deep Learning Collision Prediction Project",
     description: "Deep learning project for predicting collisions",
     link: "/collision-prediction",
     info: "The model takes 11 consecutive images of objects (varying shape, color, and material) moving on a smooth white surface. The model must predict the segmentation mask of the scene after another 11 frames. We used a dual UNet model (WNet) to predict object positions accurately.",

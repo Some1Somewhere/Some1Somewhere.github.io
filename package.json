@@ -26,7 +26,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "predeploy": "react-scripts build && cp build/index.html build/404.html && cp CNAME build/CNAME",
+        "generate-sitemap": "node scripts/generate-sitemap.js",
+        "predeploy": "npm run generate-sitemap && react-scripts build && cp build/index.html build/404.html && cp CNAME build/CNAME",
         "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
@@ -48,6 +49,7 @@
         ]
     },
     "devDependencies": {
+        "esm": "^3.2.25",
         "gh-pages": "^6.0.0"
     }
 }

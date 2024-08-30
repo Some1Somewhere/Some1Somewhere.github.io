@@ -10,20 +10,22 @@
   
   .po_item {
     position: relative;
-    width: 100%;
+    border-radius: 15px;
     overflow: hidden;
-    border-radius: 8px;
+    transition: all 0.3s ease;
   }
   
   .po_item img {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    transition: 0.3s ease;
+    border-radius: 15px;
+    border: 3px;
+    transition: all 0.3s ease;
   }
 
   .po_item img.web-screenshot {
     aspect-ratio: 16 / 9;
+    object-fit: cover;
   }
 
   .po_item img.app-screenshot {
@@ -44,8 +46,9 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: 0.3s ease;
+    transition: opacity 0.3s ease;
     padding: 1rem;
+    border-radius: 15px;
   }
   
   .po_item:hover .content {
@@ -55,6 +58,7 @@
   .po_item h3 {
     color: #fff;
     margin-bottom: 0.5rem;
+    text-align: center;
   }
   
   .po_item p {
