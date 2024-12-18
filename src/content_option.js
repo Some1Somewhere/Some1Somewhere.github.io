@@ -18,27 +18,40 @@ const introdata = {
 
 const dataabout = {
   title: "Who am I?",
-  aboutme: "Having recently graduated from New York University with a Master of Science in Computing, Entrepreneurship, and Innovation, I am now channeling my expertise into building Snacc, an AI-enabled wellness tracker. My passion for problem-solving inspires me to develop innovative solutions that enhance everyday life. With a knack for rapidly acquiring new skills, I have successfully led multiple projects both independently and through my work at Pyramid Developers, which fosters a learning and development platform for students. As a former Teaching Assistant for the course 'DevOps and Agile Methodologies' at NYU, I bring a robust understanding of efficient software development practices to my current endeavor. At Snacc, I am committed to driving health and wellness forward through cutting-edge technology, aiming to improve the quality of life for our users."};
+  aboutme: "Having recently graduated from New York University with a Master of Science in Computing, Entrepreneurship, and Innovation, I am now working as a Founding Engineer at Truemark, where we're empowering educators to meaningfully integrate AI in their classrooms. Our platform helps teachers scaffold AI interactions, ensuring students develop critical thinking skills while being exposed to AI in a controlled, educational environment. Previously, I founded Pyramid Developers, where we enabled founders to realise their visions through software solutions. As a former Teaching Assistant for the course 'DevOps and Agile Methodologies' at NYU, I bring a robust understanding of efficient software development practices to my current endeavors in educational technology."
+};
+
 const worktimeline = [
+  {
+    jobtitle: "Founding Engineer",
+    where: "Truemark - AI for Education",
+    date: "September 2024 - Present",
+  },
   {
     jobtitle: "Co-Founder",
     where: "Snacc",
-    date: "Febuary 2024 - Present",
+    date: "February 2024 - September 2024",
+  },
+  {
+    jobtitle: "Founder & CEO",
+    where: "Pyramid Developers",
+    date: "2020 - Present",
   },
   {
     jobtitle: "Teaching Assistant",
     where: "New York University",
     date: "January 2023 - December 2023",
-  }, {
-    jobtitle: "Product Manager",
-    where: "Pyramid Developers",
-    date: "January 2020 - Present",
   },
   {
     jobtitle: "Research and Development Engineer",
     where: "Hewlett Packard Enterprise",
     date: "January 2022 - June 2022",
   },
+  // {
+  //   jobtitle: "Engineering Intern",
+  //   where: "Riskcovry",
+  //   date: "NOT SURE",
+  // },
 ];
 
 const skills = [
@@ -222,7 +235,7 @@ const otherProjects = [
 
 
 const contactConfig = {
-  YOUR_EMAIL: "dhruv.shetty@stern.nyu.edu",
+  YOUR_EMAIL: "dhruvshetty.business@gmail.com",
   YOUR_FONE: "+1(470)902-1657  or +919845309776",
   description: "Reach out to me and I'll reply the moment I'm available!",
   // creat an emailjs.com account 
