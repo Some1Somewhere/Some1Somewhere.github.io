@@ -36,6 +36,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
   ${generateUrl('/', '1.0', 'monthly')}
   ${generateUrl('/about', '0.8', 'monthly')}
   ${generateUrl('/portfolio', '0.9', 'weekly')}
+  ${generateUrl('/work/truemark', '0.9', 'monthly')}
   ${projectTitles
     .map(title => generateUrl(`/portfolio/${title.toLowerCase().replace(/\s+/g, '-')}`))
     .join('')}

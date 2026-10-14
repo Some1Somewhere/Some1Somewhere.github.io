@@ -28,7 +28,8 @@
         "eject": "react-scripts eject",
         "generate-sitemap": "node scripts/generate-sitemap.js",
         "predeploy": "npm run generate-sitemap && react-scripts build && cp build/index.html build/404.html && cp CNAME build/CNAME",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d build",
+        "postbuild": "react-snap"
     },
     "eslintConfig": {
         "extends": [
@@ -50,6 +51,24 @@
     },
     "devDependencies": {
         "esm": "^3.2.25",
-        "gh-pages": "^6.0.0"
+        "gh-pages": "^6.0.0",
+        "react-snap": "^1.23.0"
+    },
+    "reactSnap": {
+        "include": [
+            "/",
+            "/about",
+            "/portfolio",
+            "/work/truemark",
+            "/contact"
+        ],
+        "skipThirdPartyRequests": true,
+        "puppeteerArgs": [
+            "--no-sandbox"
+        ],
+        "puppeteerExecutablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        "exclude": [
+            "/resume/Shetty%20Dhruv%20Resume%20US.pdf"
+        ]
     }
 }

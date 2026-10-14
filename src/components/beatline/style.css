@@ -1,0 +1,24 @@
+.beatline {
+    min-height: 3em;
+}
+
+/* Each clause fades in once, staggered by animation-delay, then stays. */
+.beat {
+    display: inline-block;
+    margin-right: 0.3em;
+    opacity: 0;
+    transform: translateY(6px);
+    animation: beat-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes beat-in {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .beat {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}

@@ -1,0 +1,146 @@
+.cs_kicker {
+    font-family: Raleway, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-bottom: 6px;
+}
+
+.cs_tagline {
+    font-size: 1.25rem;
+    opacity: 0.8;
+}
+
+.cs_stat_value {
+    font-family: Marcellus, serif;
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.cs_stat_label {
+    font-size: 14px;
+    opacity: 0.7;
+    max-width: 240px;
+}
+
+.cs_visual {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    margin: 0 0 28px;
+    color: var(--text-color);
+    font-family: Raleway, sans-serif;
+}
+
+.cs_visual rect,
+.cs_visual line,
+.cs_visual path {
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+}
+
+.cs_visual text {
+    fill: currentColor;
+    font-size: 13px;
+}
+
+.cs_bar_value {
+    font-family: Marcellus, serif;
+    font-size: 18px !important;
+}
+
+.cs_bar_label {
+    opacity: 0.6;
+}
+
+.cs_axis {
+    opacity: 0.3;
+}
+
+/* Pages: the scroll column fades back as the pages rise into place. */
+.cs_pages_scroll {
+    opacity: 0.45;
+}
+
+.cs_pages_arrow {
+    opacity: 0.5;
+}
+
+.cs_page {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: cs-rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Tutor: bars grow up from the axis. */
+.cs_bar rect {
+    fill: currentColor;
+    fill-opacity: 0.12;
+}
+
+.cs_bar {
+    transform: scaleY(0);
+    animation: cs-grow 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Exam: the line draws itself, then the area fades in under it. */
+.cs_area {
+    fill: currentColor;
+    fill-opacity: 0;
+    stroke: none;
+    animation: cs-fill 0.8s ease-out 1s forwards;
+}
+
+.cs_line {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: cs-draw 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+.cs_peak {
+    fill: currentColor;
+    stroke: none;
+    opacity: 0;
+    animation: cs-fade 0.4s ease-out 1.3s forwards;
+}
+
+@keyframes cs-rise { to { opacity: 1; transform: translateY(0); } }
+@keyframes cs-grow { to { transform: scaleY(1); } }
+@keyframes cs-fill { to { fill-opacity: 0.08; } }
+@keyframes cs-draw { to { stroke-dashoffset: 0; } }
+@keyframes cs-fade { to { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+    .cs_page, .cs_bar, .cs_area, .cs_line, .cs_peak {
+        animation: none;
+        opacity: 1;
+        transform: none;
+        stroke-dashoffset: 0;
+    }
+    .cs_area { fill-opacity: 0.08; }
+}
+
+.cs_result {
+    font-family: Marcellus, serif;
+    font-size: 1.15rem;
+    border-left: 2px solid var(--text-color);
+    padding-left: 14px;
+}
+
+.cs_story {
+    scroll-margin-top: 80px;
+}
+
+.cs_image {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 0 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}

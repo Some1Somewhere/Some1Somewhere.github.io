@@ -1,9 +1,22 @@
 import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Typewriter from "typewriter-effect";
-import { introdata, meta } from "../../content_option";
+import { GrowthTicker } from "../../components/growthticker";
+import { BeatLine } from "../../components/beatline";
+import { introdata, meta, growthStops } from "../../content_option";
 import { Link } from "react-router-dom";
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Dhruv Shetty",
+  jobTitle: "Founding Engineer",
+  description: "Product engineer. Founding engineer at TrueMark, an AI writing platform for schools.",
+  url: "https://dhruvshetty.com",
+  worksFor: { "@type": "Organization", name: "TrueMark", url: "https://truemark.ai" },
+  alumniOf: { "@type": "CollegeOrUniversity", name: "New York University" },
+  sameAs: ["https://linkedin.com/in/dhruv-k-shetty", "https://github.com/Some1somewhere"],
+};
 
 export const Home = () => {
   return (
@@ -13,6 +26,7 @@ export const Home = () => {
           <meta charSet="utf-8" />
           <title> {meta.title}</title>
           <meta name="description" content={meta.description} />
+          <script type="application/ld+json">{JSON.stringify(personSchema)}</script>
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
           <div
@@ -23,25 +37,10 @@ export const Home = () => {
             <div className="align-self-center ">
               <div className="intro mx-auto">
                 <h2 className="mb-1x">{introdata.title}</h2>
-                <h1 className="fluidz-48 mb-1x">
-                  <Typewriter
-                    options={{
-                      strings: [
-                        introdata.animated.first,
-                        introdata.animated.second,
-                        introdata.animated.third,
-                        introdata.animated.fourth,
-                      ],
-                      autoStart: true,
-                      loop: true,
-                      deleteSpeed: 8,
-                      delay: 35
-                    }}
-                  />
-                </h1>
+                <h1 className="visually-hidden">Dhruv Shetty, Product Engineer and Founding Engineer at TrueMark</h1>
+                <GrowthTicker stops={growthStops} />
                 <p className="mb-0x">{introdata.description1}</p>
-                <p className="mb-0x">{introdata.description2}</p>
-                <p className="mb-1x">{introdata.description3}</p>
+                <BeatLine beats={introdata.beats} />
                 <div className="intro_btn-action pb-5">
                   <Link to="/resume">
                     <div id="button_p" className="ac_btn btn ">

@@ -6,7 +6,6 @@ import {
   dataabout,
   meta,
   worktimeline,
-  skills,
 } from "../../content_option";
 import { Fade } from "react-awesome-reveal";
 
@@ -33,7 +32,9 @@ export const About = () => {
           </Col>
           <Col lg="9" className="d-flex align-items-center">
             <div>
-              <p>{dataabout.aboutme}</p>
+              {dataabout.aboutme.map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
             </div>
           </Col>
         </Row>
@@ -58,21 +59,6 @@ export const About = () => {
               </tbody>
             </table>
           </Col>
-        </Row>
-        </Fade>
-        <Fade>
-        <Row className="sec_sp">
-          <Col lg="3">
-            <h3 className="color_sec py-4">Skills</h3>
-          </Col>
-          <Col lg="9" className="skills-container">
-  {skills.map((data, i) => {
-    return (
-      <img key={i} className="skill-badge" alt={data.name} src={data.badgeUrl} />
-    );
-  })}
-</Col>
-
         </Row>
         </Fade>
 

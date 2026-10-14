@@ -1,24 +1,33 @@
 const logotext = "DKS";
 const meta = {
-  title: "Dhruv Shetty",
-  description: "Dhruv Shetty is a Product Manager and Full Stack Developer who loves building impactful products",
+  title: "Dhruv Shetty | Product Engineer",
+  description: "Dhruv Shetty is a product engineer and the founding engineer at TrueMark. Empowering educators to foster critical thinking with AI.",
 };
 
 const introdata = {
   title: "I’m Dhruv Shetty",
-  animated: {
-    first: "I passionately innovate products",
-    second: "I breathe life through code",
-    third: "I flourish from diverse experiences",
-    fourth: "I masterfully solve complex problems",
-  },
-  description1: "Entreprenuer, Full Stack Developer and Product Manager",
-  description2: "Love making life a little bit easier, one innovation at a time",
+  description1: "Founding Engineer at TrueMark. Empowering educators to foster critical thinking with AI.",
+  beats: ["Understand the user.", "Find the real problem.", "Build the thing that fixes it."],
 };
+
+// Hero growth ticker. Pyramid client counts are rounded; TrueMark numbers are from product analytics.
+const growthStops = [
+  { year: "2020", value: 4, unit: "clients", label: "Pyramid Developers, year one" },
+  { year: "2021", value: 12, unit: "clients", label: "Pyramid Developers" },
+  { year: "2022", value: 20, unit: "clients", label: "Pyramid Developers" },
+  { year: "2023", value: 50, unit: "clients", label: "Pyramid Developers, 40+ products shipped" },
+  { year: "2024", value: 100, unit: "students", label: "TrueMark, 2 teachers" },
+  { year: "2025", value: 8000, unit: "students", label: "TrueMark, 40 schools" },
+  { year: "2026", value: 45000, unit: "students", label: "TrueMark, 2,300 teachers, 229 schools" },
+];
 
 const dataabout = {
   title: "Who am I?",
-  aboutme: "Having recently graduated from New York University with a Master of Science in Computing, Entrepreneurship, and Innovation, I am now working as a Founding Engineer at Truemark, where we're empowering educators to meaningfully integrate AI in their classrooms. Our platform helps teachers scaffold AI interactions, ensuring students develop critical thinking skills while being exposed to AI in a controlled, educational environment. Previously, I founded Pyramid Developers, where we enabled founders to realise their visions through software solutions. As a former Teaching Assistant for the course 'DevOps and Agile Methodologies' at NYU, I bring a robust understanding of efficient software development practices to my current endeavors in educational technology."
+  aboutme: [
+    "I'm the founding engineer at TrueMark, and the only engineer on the team. We give teachers a writing platform where AI guides students instead of writing for them, and shows teachers how each essay came together.",
+    "I joined when 2 teachers were using it. Two years later it's 2,300+ teachers and 45,000+ students across 229 schools, and the code in between is mine: the student editor, AI grading and feedback, the 7 LMS integrations schools need before they can buy, and everything that keeps it up on exam day.",
+    "Before TrueMark I co-founded Snacc, an AI calorie tracker that reached ~1,000 users, and ran Pyramid Developers for five years, a studio of up to 30 engineers that shipped 40+ products for startups. I have a master's in Computing, Entrepreneurship and Innovation from NYU, where I also TA'd DevOps and Agile Methodologies.",
+  ],
 };
 
 const worktimeline = [
@@ -35,7 +44,7 @@ const worktimeline = [
   {
     jobtitle: "Founder & CEO",
     where: "Pyramid Developers",
-    date: "2020 - Present",
+    date: "January 2020 - September 2024",
   },
   {
     jobtitle: "Teaching Assistant",
@@ -122,10 +131,8 @@ const pyramidProjects = [
     link: "https://www.athenagen.ai/",
     info: "Athena is an AI-based Marketing Image Generator that allows users to generate 25-30 high-quality marketing images based on a provided concept or keyword. Users can also add templates and view previously generated results.",
     scope: [
-      "Designed and implemented backend architecture.",
-      "Integrated with Midjourney through a Discord bot.",
-      "Managed UI/UX design.",
-      "Led Front-End Development, Bug Testing, and Deployment."
+      "Backend and Midjourney integration via a Discord bot, so a keyword becomes 25 to 30 marketing images.",
+      "Shipped front end and deployment.",
     ],
     isAppScreenshot: false
   },
@@ -136,11 +143,8 @@ const pyramidProjects = [
     link: "https://play.google.com/store/apps/details?id=com.pyramid.trashtocash",
     info: "Trash to Cash is a waste management solution in Bangalore, allowing users to book a partner to collect segregated waste in exchange for UPI compensation.",
     scope: [
-      "Shaped entire architecture for the app.",
-      "Built all three apps (User, Partner, Admin) end-to-end.",
-      "Led scaling and iterative development based on client needs.",
-      "Managed UI/UX design.",
-      "Handled Front-End Development, Server Setup, Maintenance, and Deployment on Android and iOS."
+      "Three Flutter apps (user, partner, admin) built end to end for segregated waste pickup paid by UPI.",
+      "Ran in production for 16 months; scaled and iterated on client requests.",
     ],
     isAppScreenshot: true
   },
@@ -151,10 +155,8 @@ const pyramidProjects = [
     link: "https://play.google.com/store/apps/details?id=com.pyramid.enerman",
     info: "Enerman Technologies provides solutions for solar energy management. This app helps owners track power generation and energy collection over different periods.",
     scope: [
-      "Led product development.",
-      "Integrated app with Enerman's solar energy management technologies using GraphQL.",
-      "Managed UI/UX design.",
-      "Handled Front-End Development, Bug Testing, and Deployment on Android and iOS."
+      "Flutter app on top of Enerman's solar management stack over GraphQL.",
+      "Shipped to Android and iOS.",
     ],
     isAppScreenshot: true
   }
@@ -168,11 +170,8 @@ const otherProjects = [
     link: "https://snacc.fit/get",
     info: "Snacc is a nutrition guide that uses AI to help you manage your diet. You can take photos or describe your meals, and Snacc will quickly show you the nutritional details like calories and nutrients.",
     scope: [
-      "Drove rapid development from concept to prototype.",
-      "Achieved beta testing launch within two months.",
-      "Secured $30,000 in initial funding.",
-      "Led customer discovery phases.",
-      "Enhanced user engagement by 30% and retention by 15%."
+      "AI calorie tracker in Flutter: photograph a meal, get calories and nutrients from OpenAI vision.",
+      "Beta in 2 months, ~1,000 users, $30,000 raised.",
     ],
     isAppScreenshot: true
   },
@@ -182,10 +181,8 @@ const otherProjects = [
     description: "Nightlife Recommendation Platform using Spotify Data",
     info: "Lucio is a platform that analyzes users' music preferences by connecting to their Spotify accounts and matches them with nightclubs, bars, and music venues that feature music and vibes they'll love. It also provides key information like reviews, cost of entry, and dress code to help users make informed decisions.",
     scope: [
-      "Led development from ideation to market-ready product.",
-      "Handled user story creation and design.",
-      "Conducted customer discovery with 15 NYC venues.",
-      "Managed third-party integrations, including Spotify."
+      "Matches Spotify listening history to NYC bars and venues.",
+      "Customer discovery with 15 venues; Spotify integration; ideation to market-ready.",
     ],
     isAppScreenshot: true
   },
@@ -195,10 +192,8 @@ const otherProjects = [
     description: "Help you discover the best bars and pubs in NYC",
     info: "HappyOurs is a mobile application that provides streamlined information about drinking establishments for people who are either new to the city or want to try out new places, making the process more efficient than existing methods like Google Maps or Yelp Reviews.",
     scope: [
-      "Built the fully functional app.",
-      "Scraped the internet for accurate information.",
-      "Conducted user interviews to understand pain points.",
-      "Managed development from UI/UX design to deployment on App Store and Play Store."
+      "Scraped and organised happy-hour data for NYC bars.",
+      "User interviews to UI to App Store and Play Store.",
     ],
     isAppScreenshot: true
   },
@@ -209,10 +204,8 @@ const otherProjects = [
     link: "https://www.maigrate.com/",
     info: "Maigrate is a no-code AI platform that simplifies the integration of AI copilots into existing products, saving time, resources, and costs.",
     scope: [
-      "Architected and launched the Minimum Viable Product.",
-      "Boosted customer acquisition by 30% in the first quarter.",
-      "Configured scalable AWS cloud computing environments.",
-      "Achieved 99.99% uptime through continuous integration and deployment."
+      "No-code RAG chatbot builder: add knowledge sources, embed with one script tag.",
+      "AWS ECS with CI/CD; launched with a pilot client.",
     ],
     isAppScreenshot: false
   },
@@ -223,10 +216,8 @@ const otherProjects = [
     link: "/collision-prediction",
     info: "The model takes 11 consecutive images of objects (varying shape, color, and material) moving on a smooth white surface. The model must predict the segmentation mask of the scene after another 11 frames. We used a dual UNet model (WNet) to predict object positions accurately.",
     scope: [
-      "Developed 'WNet,' a dual UNet AI model for predictive semantic segmentation.",
-      "Achieved 2nd place in NYU’s Machine Learning challenge with a 0.442 Jaccard index.",
-      "Enhanced model accuracy using autoregressive techniques.",
-      "Utilized HPC for efficient model running."
+      "WNet, a dual-UNet model that predicts the segmentation mask 11 frames ahead.",
+      "2nd place in Yann LeCun's class challenge (0.442 Jaccard).",
     ],
     isAppScreenshot: false
   }
@@ -260,4 +251,5 @@ export {
   contactConfig,
   socialprofils,
   logotext,
+  growthStops,
 };

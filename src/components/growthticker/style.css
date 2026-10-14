@@ -1,0 +1,79 @@
+.growth {
+    margin-bottom: 28px;
+}
+
+.growth_year {
+    font-family: Raleway, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.25em;
+    opacity: 0.55;
+    margin-bottom: 2px;
+}
+
+.growth_value {
+    font-family: Marcellus, serif;
+    font-size: 44px;
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+}
+
+.growth_unit {
+    font-size: 22px;
+    opacity: 0.8;
+}
+
+.growth_label {
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    opacity: 0.7;
+    min-height: 1.5em;
+}
+
+.growth_line {
+    display: block;
+    width: 100%;
+    height: 110px;
+    margin-top: 10px;
+    overflow: visible;
+}
+
+.growth_path_bg,
+.growth_path {
+    fill: none;
+    stroke-width: 1.5;
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.growth_path_bg {
+    stroke: var(--text-color);
+    opacity: 0.15;
+}
+
+.growth_path {
+    stroke: var(--text-color);
+    stroke-dasharray: 1;
+    transition: stroke-dashoffset 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.growth_dot {
+    fill: var(--text-color);
+    transition: cx 1.4s cubic-bezier(0.16, 1, 0.3, 1), cy 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .growth_path,
+    .growth_dot {
+        transition: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .growth_line {
+        height: 80px;
+    }
+    .growth_value {
+        font-size: 38px;
+    }
+}

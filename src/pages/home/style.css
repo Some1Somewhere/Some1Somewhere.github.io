@@ -194,8 +194,10 @@ section {
 
 @media (max-width:991.98px) {
     .intro_sec .h_bg-image {
-        height: 600px;
-        min-height: 75vh;
+        height: 42vh;
+        min-height: 260px;
+        max-height: 380px;
+        background-position: center 28%;
         margin-bottom: 30px;
     }
     .intro_sec .h_bg-image .block {
@@ -231,4 +233,14 @@ section {
 
 .intro_sec .h_bg-image {
     filter: saturate(0.5);
+}
+@media (max-width:991.98px) {
+    .intro_btn-action {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .intro_btn-action .ac_btn {
+        margin-right: 0;
+    }
 }
