@@ -8,8 +8,8 @@
 }
 
 .hand_slot {
-    width: 150px;
-    margin: 0 -22px;
+    width: 140px;
+    margin: 0 -40px;
     transform: rotate(var(--angle)) translateY(calc(var(--angle) * var(--angle) / 9deg));
     transform-origin: 50% 130%;
     transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), z-index 0s;
@@ -26,9 +26,9 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 150px;
-    height: 210px;
-    padding: 16px 14px;
+    width: 140px;
+    height: 200px;
+    padding: 14px 12px;
     border: 1px solid var(--text-color);
     border-radius: 10px;
     background: var(--bg-color);
