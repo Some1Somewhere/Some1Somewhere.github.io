@@ -64,62 +64,24 @@ const worktimeline = [
 ];
 
 const skills = [
-  {
-    name: "Flutter",
-    badgeUrl: "https://img.shields.io/badge/Flutter-%2302569B.svg?&style=for-the-badge&logo=Flutter&logoColor=white"
-  },
-  {
-    name: "Python",
-    badgeUrl: "https://img.shields.io/badge/python-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"
-  },
-  {
-    name: "Dart",
-    badgeUrl: "https://img.shields.io/badge/dart-%230175C2.svg?&style=for-the-badge&logo=dart&logoColor=white"
-  },
-  {
-    name: "AWS",
-    badgeUrl: "https://img.shields.io/badge/Amazon%20Web%20Services-%23FF9900.svg?&style=for-the-badge&logo=amazon-aws&logoColor=white"
-  },
-  {
-    name: "Django",
-    badgeUrl: "https://img.shields.io/badge/django-%23092E20.svg?&style=for-the-badge&logo=django&logoColor=white"
-  },
-  {
-    name: "Google Cloud",
-    badgeUrl: "https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?&style=for-the-badge&logo=google-cloud&logoColor=white"
-  },
-  {
-    name: "Firebase",
-    badgeUrl: "https://img.shields.io/badge/Firebase-orange.svg?&style=for-the-badge&logo=firebase&logoColor=white"
-  },
-  {
-    name: "NodeJS",
-    badgeUrl: "https://img.shields.io/badge/node.js-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"
-  },
-  {
-    name: "JavaScript",
-    badgeUrl: "https://img.shields.io/badge/javascript-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-  },
-  {
-    name: "TypeScript",
-    badgeUrl: "https://img.shields.io/badge/typescript-%23007ACC.svg?&style=for-the-badge&logo=typescript&logoColor=white"
-  },
-  {
-    name: "HTML5",
-    badgeUrl: "https://img.shields.io/badge/html5-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"
-  },
-  {
-    name: "C",
-    badgeUrl: "https://img.shields.io/badge/c-%2300599C.svg?&style=for-the-badge&logo=c&logoColor=white"
-  },
-  {
-    name: "Java",
-    badgeUrl: "https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"
-  },
-  {
-    name: "Go",
-    badgeUrl: "https://img.shields.io/badge/Go-blue.svg?&style=for-the-badge&logo=go&logoColor=white"
-  }
+  { name: "Python", badgeUrl: "https://img.shields.io/badge/Python-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white" },
+  { name: "TypeScript", badgeUrl: "https://img.shields.io/badge/TypeScript-%23007ACC.svg?&style=for-the-badge&logo=typescript&logoColor=white" },
+  { name: "React", badgeUrl: "https://img.shields.io/badge/React-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=white" },
+  { name: "Next.js", badgeUrl: "https://img.shields.io/badge/Next%2Ejs-%23000000.svg?&style=for-the-badge&logo=nextdotjs&logoColor=white" },
+  { name: "FastAPI", badgeUrl: "https://img.shields.io/badge/FastAPI-%23009688.svg?&style=for-the-badge&logo=fastapi&logoColor=white" },
+  { name: "Flutter", badgeUrl: "https://img.shields.io/badge/Flutter-%2302569B.svg?&style=for-the-badge&logo=flutter&logoColor=white" },
+  { name: "Google Cloud", badgeUrl: "https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?&style=for-the-badge&logo=googlecloud&logoColor=white" },
+  { name: "Kubernetes", badgeUrl: "https://img.shields.io/badge/Kubernetes-%23326CE5.svg?&style=for-the-badge&logo=kubernetes&logoColor=white" },
+  { name: "Docker", badgeUrl: "https://img.shields.io/badge/Docker-%232496ED.svg?&style=for-the-badge&logo=docker&logoColor=white" },
+  { name: "Firebase", badgeUrl: "https://img.shields.io/badge/Firebase-%23FFCA28.svg?&style=for-the-badge&logo=firebase&logoColor=white" },
+  { name: "PostgreSQL", badgeUrl: "https://img.shields.io/badge/PostgreSQL-%23336791.svg?&style=for-the-badge&logo=postgresql&logoColor=white" },
+  { name: "GitHub Actions", badgeUrl: "https://img.shields.io/badge/GitHub%20Actions-%232088FF.svg?&style=for-the-badge&logo=githubactions&logoColor=white" },
+  { name: "Sentry", badgeUrl: "https://img.shields.io/badge/Sentry-%23362D59.svg?&style=for-the-badge&logo=sentry&logoColor=white" },
+  { name: "PostHog", badgeUrl: "https://img.shields.io/badge/PostHog-%231D4AFF.svg?&style=for-the-badge&logo=posthog&logoColor=white" },
+  { name: "Prometheus", badgeUrl: "https://img.shields.io/badge/Prometheus-%23E6522C.svg?&style=for-the-badge&logo=prometheus&logoColor=white" },
+  { name: "Langfuse", badgeUrl: "https://img.shields.io/badge/Langfuse-%23000000.svg?&style=for-the-badge&logo=langfuse&logoColor=white" },
+  { name: "Intercom", badgeUrl: "https://img.shields.io/badge/Intercom-%236AFDEF.svg?&style=for-the-badge&logo=intercom&logoColor=white" },
+  { name: "OpenAI", badgeUrl: "https://img.shields.io/badge/OpenAI-%23412991.svg?&style=for-the-badge&logo=openai&logoColor=white" },
 ];
 
 // Portfolio Projects
