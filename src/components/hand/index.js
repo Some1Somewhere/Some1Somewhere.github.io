@@ -44,8 +44,9 @@ export const Hand = ({ cards }) => (
   <ul className="hand" aria-label="Off the clock">
     {cards.map((c, i) => {
       const Tag = c.url ? "a" : "div";
-      const n = cards.length;
-      const angle = (i - (n - 1) / 2) * 6;
+      const PER_ROW = 5;
+      const row = Math.min(PER_ROW, cards.length - Math.floor(i / PER_ROW) * PER_ROW);
+      const angle = ((i % PER_ROW) - (row - 1) / 2) * 5;
       return (
         <li key={c.title} className="hand_slot" style={{ "--angle": `${angle}deg`, "--i": i }}>
           <Tag className="card" href={c.url} target={c.url ? "_blank" : undefined} rel={c.url ? "noopener noreferrer" : undefined}>

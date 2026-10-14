@@ -45,7 +45,6 @@ const offTheClock = {
     { icon: "receipt", title: "Statement analyser", url: "https://github.com/Some1Somewhere/Statement-Analyzer", blurb: "Gemini reads my card statements, categorises every line, merges Splitwise, writes one CSV." },
     { icon: "briefcase", title: "Job applier", blurb: "A Claude Code plugin that applies to the easy jobs each morning and drafts the hard ones for me. v0.1, private for now." },
   ],
-  openSource: "Patches I needed upstream: Query.count() and a set(merge=True) fix in python-mock-firestore, the new drive-picker element in react-google-drive-picker, and the tiptap-footnotes and tiptap-pagination-plus forks that Pages at TrueMark grew out of.",
   outro: "As a kid I taught with the Jyoti Program for five years.",
 };
 

@@ -1,15 +1,16 @@
 .hand {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 30px 0 10px;
+    row-gap: 36px;
+    padding: 24px 0 10px;
     margin: 0 0 1.5rem;
-    min-height: 260px;
 }
 
 .hand_slot {
     width: 140px;
-    margin: 0 -40px;
+    margin: 0 -8px;
     transform: rotate(var(--angle)) translateY(calc(var(--angle) * var(--angle) / 9deg));
     transform-origin: 50% 130%;
     transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), z-index 0s;

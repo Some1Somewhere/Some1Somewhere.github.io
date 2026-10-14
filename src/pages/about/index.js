@@ -84,7 +84,6 @@ export const About = () => {
           <Col lg="9">
             <p>{offTheClock.intro}</p>
             <Hand cards={offTheClock.cards} />
-            <p className="otc_oss">{offTheClock.openSource}</p>
             <p>{offTheClock.outro}</p>
           </Col>
         </Row>
