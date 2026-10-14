@@ -32,7 +32,6 @@ const dataabout = {
 
 const offTheClock = {
   title: "Off the clock",
-  intro: "Most weeks look like this. Hover a card.",
   cards: [
     { icon: "dice", title: "Board games", blurb: "Sequence, Catan, Coup, Fishbowl, Dukes of Nukes." },
     { icon: "runner", title: "Kho Kho in FiDi", blurb: "Every two weeks. Bring shoes." },

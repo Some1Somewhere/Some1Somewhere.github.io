@@ -82,7 +82,6 @@ export const About = () => {
             <h3 className="color_sec py-4">{offTheClock.title}</h3>
           </Col>
           <Col lg="9">
-            <p>{offTheClock.intro}</p>
             <Hand cards={offTheClock.cards} />
             <p>{offTheClock.outro}</p>
           </Col>

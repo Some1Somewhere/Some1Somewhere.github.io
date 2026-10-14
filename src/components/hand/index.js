@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-// A fanned hand of cards. Each card: an icon, a title, one line. Hover lifts it.
+// A grid of cards. Each card: an icon, a title, one line. Hover lifts and tilts it.
 // Icons are simple line drawings in currentColor so they follow the theme.
 const icons = {
   chip: (
@@ -44,11 +44,10 @@ export const Hand = ({ cards }) => (
   <ul className="hand" aria-label="Off the clock">
     {cards.map((c, i) => {
       const Tag = c.url ? "a" : "div";
-      const PER_ROW = 5;
-      const row = Math.min(PER_ROW, cards.length - Math.floor(i / PER_ROW) * PER_ROW);
-      const angle = ((i % PER_ROW) - (row - 1) / 2) * 5;
+      // alternate the hover tilt so neighbours don't lean the same way
+      const tilt = i % 2 ? "1.5deg" : "-1.5deg";
       return (
-        <li key={c.title} className="hand_slot" style={{ "--angle": `${angle}deg`, "--i": i }}>
+        <li key={c.title} className="hand_slot" style={{ "--tilt": tilt }}>
           <Tag className="card" href={c.url} target={c.url ? "_blank" : undefined} rel={c.url ? "noopener noreferrer" : undefined}>
             <span className="card_icon">{icons[c.icon]}</span>
             <span className="card_title">{c.title}</span>
