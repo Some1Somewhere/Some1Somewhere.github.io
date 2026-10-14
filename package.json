@@ -68,7 +68,8 @@
         ],
         "puppeteerExecutablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
         "exclude": [
-            "/resume/Shetty%20Dhruv%20Resume%20US.pdf"
+            "/resume/main.pdf",
+            "/resume/product.pdf"
         ]
     }
 }

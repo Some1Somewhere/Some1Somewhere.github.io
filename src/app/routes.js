@@ -43,15 +43,15 @@ const RedirectToResume = () => {
   useEffect(() => {
     const hasPDFViewer = navigator.mimeTypes['application/pdf'];
     if (!hasPDFViewer) {
-      window.open('/resume/Shetty%20Dhruv%20Resume%20US.pdf', '_blank');
+      window.open('/resume/main.pdf', '_blank');
       navigate('/');
     }
   }, [navigate]);
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100%' }}>
-      <object data="/resume/Shetty%20Dhruv%20Resume%20US.pdf" type="application/pdf" width="80%" height="100%">
-        <p>It appears you don't have a PDF plugin for this browser. You can <a href="/resume/Shetty%20Dhruv%20Resume%20US.pdf">click here to download the PDF file.</a></p>
+      <object data="/resume/main.pdf" type="application/pdf" width="80%" height="100%">
+        <p>It appears you don't have a PDF plugin for this browser. You can <a href="/resume/main.pdf">click here to download the PDF file.</a></p>
       </object>
     </div>
   );
