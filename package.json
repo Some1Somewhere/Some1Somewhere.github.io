@@ -27,7 +27,7 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "generate-sitemap": "node scripts/generate-sitemap.js",
-        "predeploy": "npm run generate-sitemap && react-scripts build && cp build/index.html build/404.html && cp CNAME build/CNAME",
+        "predeploy": "npm run generate-sitemap && npm run build && cp build/index.html build/404.html && cp CNAME build/CNAME",
         "deploy": "gh-pages -d build",
         "postbuild": "react-snap"
     },
