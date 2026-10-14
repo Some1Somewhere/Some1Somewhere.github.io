@@ -34,9 +34,9 @@ const offTheClock = {
   title: "Off the clock",
   intro: "Most weeks look like this. Hover a card.",
   cards: [
-    { icon: "chip", title: "Poker night", blurb: "Hosted every two weeks. Small stakes, long games." },
     { icon: "dice", title: "Board games", blurb: "Sequence, Catan, Coup, Fishbowl, Dukes of Nukes." },
     { icon: "runner", title: "Kho Kho in FiDi", blurb: "Every two weeks. Bring shoes." },
+    { icon: "chip", title: "Poker night", blurb: "Hosted every two weeks. Small stakes, long games." },
     { icon: "ball", title: "Volleyball", blurb: "State level in school. Still show up when there's a net." },
     { icon: "city", title: "Out in the city", blurb: "New York, most nights, on foot." },
     { icon: "trophy", title: "DKS Sports Day '27", url: "https://27.dhruvshetty.com", blurb: "My 27th as a 6-a-side tournament. 9 events, live scores, a schedule that rebuilds itself." },
