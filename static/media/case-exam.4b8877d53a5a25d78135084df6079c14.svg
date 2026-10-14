@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#0d0d0d"/>
+  <rect x="0.75" y="0.75" width="638.5" height="358.5" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.5"/>
+  <text x="40" y="60" fill="#ffffff" fill-opacity="0.55" font-family="Raleway, Helvetica, Arial, sans-serif" font-size="14" letter-spacing="4">TRUEMARK</text>
+  <text x="40" y="200" fill="#ffffff" font-family="Marcellus, Georgia, serif" font-size="64">1,001 / hr</text>
+  <text x="40" y="250" fill="#ffffff" fill-opacity="0.75" font-family="Raleway, Helvetica, Arial, sans-serif" font-size="20">4,338 essays, none lost</text>
+  <text x="40" y="320" fill="#ffffff" font-family="Marcellus, Georgia, serif" font-size="30">Exam day</text>
+</svg>

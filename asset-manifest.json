@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.abeb2077.css",
-    "main.js": "/static/js/main.e83b3664.js",
+    "main.css": "/static/css/main.dca89d7f.css",
+    "main.js": "/static/js/main.62f6f3f2.js",
     "static/media/dhruv1.jpg": "/static/media/dhruv1.c145ddd965e5a26eab92.jpg",
     "static/media/lucio.png": "/static/media/lucio.4e0d6778f78df5b402c5.png",
     "static/media/trashtocash.png": "/static/media/trashtocash.23daf51071b13bd8bb69.png",
     "static/media/enerman.png": "/static/media/enerman.57aef9b404f973ce5c8f.png",
     "static/media/athena.png": "/static/media/athena.891c6e77a455cdf3feb4.png",
+    "static/media/tutor-mock.png": "/static/media/tutor-mock.ff558d0351ee3cfe522e.png",
     "static/media/maigrate.png": "/static/media/maigrate.aeef2daa6442f344b332.png",
     "static/media/snacc.png": "/static/media/snacc.d2e9127fd884ea705683.png",
     "static/media/happyours.png": "/static/media/happyours.63cde2e3803dc1e21286.png",
     "static/media/pyramid.jpeg": "/static/media/pyramid.4119b866ee6c237c3193.jpeg",
-    "index.html": "/index.html"
+    "index.html": "/index.html",
+    "static/media/case-pages.svg": "/static/media/case-pages.b45b574346f10b99486928dccad3d54b.svg",
+    "static/media/case-tutor.svg": "/static/media/case-tutor.24e7a84fbb895c33b0726da8e9fb5ca2.svg",
+    "static/media/case-exam.svg": "/static/media/case-exam.4b8877d53a5a25d78135084df6079c14.svg"
   },
   "entrypoints": [
-    "static/css/main.abeb2077.css",
-    "static/js/main.e83b3664.js"
+    "static/css/main.dca89d7f.css",
+    "static/js/main.62f6f3f2.js"
   ]
 }
