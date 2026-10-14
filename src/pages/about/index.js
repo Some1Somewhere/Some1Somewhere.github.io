@@ -7,8 +7,10 @@ import {
   meta,
   worktimeline,
   skills,
+  offTheClock,
 } from "../../content_option";
 import { Fade } from "react-awesome-reveal";
+import { Hand } from "../../components/hand";
 
 
 export const About = () => {
@@ -71,6 +73,19 @@ export const About = () => {
             {skills.map((data, i) => (
               <img key={i} className="skill-badge" alt={data.name} src={data.badgeUrl} loading="lazy" />
             ))}
+          </Col>
+        </Row>
+        </Fade>
+        <Fade>
+        <Row className="sec_sp">
+          <Col lg="3">
+            <h3 className="color_sec py-4">{offTheClock.title}</h3>
+          </Col>
+          <Col lg="9">
+            <p>{offTheClock.intro}</p>
+            <Hand cards={offTheClock.cards} />
+            <p className="otc_oss">{offTheClock.openSource}</p>
+            <p>{offTheClock.outro}</p>
           </Col>
         </Row>
         </Fade>

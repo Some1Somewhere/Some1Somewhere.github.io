@@ -113,3 +113,22 @@
     height: 1px;
     width: 100%;
 }
+.otc_builds {
+    padding-left: 1.1em;
+    margin-bottom: 1rem;
+}
+
+.otc_builds li {
+    margin-bottom: 0.5rem;
+}
+
+.otc_builds a {
+    color: var(--text-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.otc_oss {
+    font-size: 0.92rem;
+    opacity: 0.75;
+}

@@ -30,6 +30,25 @@ const dataabout = {
   ],
 };
 
+const offTheClock = {
+  title: "Off the clock",
+  intro: "Most weeks look like this. Hover a card.",
+  cards: [
+    { icon: "chip", title: "Poker night", blurb: "Hosted every two weeks. Small stakes, long games." },
+    { icon: "dice", title: "Board games", blurb: "Sequence, Catan, Coup, Fishbowl, Dukes of Nukes." },
+    { icon: "runner", title: "Kho Kho in FiDi", blurb: "Every two weeks. Bring shoes." },
+    { icon: "ball", title: "Volleyball", blurb: "State level in school. Still show up when there's a net." },
+    { icon: "city", title: "Out in the city", blurb: "New York, most nights, on foot." },
+    { icon: "trophy", title: "DKS Sports Day '27", url: "https://27.dhruvshetty.com", blurb: "My 27th as a 6-a-side tournament. 9 events, live scores, a schedule that rebuilds itself." },
+    { icon: "home", title: "apt-search", url: "https://dhruvshetty.com/apt-search/", blurb: "Built at a 6-person hackathon I hosted. Ranks NYC rentals by $/person, pings Discord on new ones." },
+    { icon: "cards", title: "We're Not Really Strangers", url: "https://wnrs.dhruvshetty.com", blurb: "The card game as a website, so it's always in the room." },
+    { icon: "receipt", title: "Statement analyser", url: "https://github.com/Some1Somewhere/Statement-Analyzer", blurb: "Gemini reads my card statements, categorises every line, merges Splitwise, writes one CSV." },
+    { icon: "briefcase", title: "Job applier", blurb: "A Claude Code plugin that applies to the easy jobs each morning and drafts the hard ones for me. v0.1, private for now." },
+  ],
+  openSource: "Patches I needed upstream: Query.count() and a set(merge=True) fix in python-mock-firestore, the new drive-picker element in react-google-drive-picker, and the tiptap-footnotes and tiptap-pagination-plus forks that Pages at TrueMark grew out of.",
+  outro: "As a kid I taught with the Jyoti Program for five years.",
+};
+
 const worktimeline = [
   {
     jobtitle: "Founding Engineer",
@@ -82,6 +101,17 @@ const skills = [
   { name: "Langfuse", badgeUrl: "https://img.shields.io/badge/Langfuse-%23000000.svg?&style=for-the-badge&logo=langfuse&logoColor=white" },
   { name: "Intercom", badgeUrl: "https://img.shields.io/badge/Intercom-%236AFDEF.svg?&style=for-the-badge&logo=intercom&logoColor=white" },
   { name: "OpenAI", badgeUrl: "https://img.shields.io/badge/OpenAI-%23412991.svg?&style=for-the-badge&logo=openai&logoColor=white" },
+  { name: "Gemini", badgeUrl: "https://img.shields.io/badge/Gemini-%238E75B2.svg?&style=for-the-badge&logo=googlegemini&logoColor=white" },
+  { name: "Claude", badgeUrl: "https://img.shields.io/badge/Claude-%23D97757.svg?&style=for-the-badge&logo=claude&logoColor=white" },
+  { name: "LLM Evals", badgeUrl: "https://img.shields.io/badge/LLM%20Evals-%23444444.svg?&style=for-the-badge&logoColor=white" },
+  { name: "RAG", badgeUrl: "https://img.shields.io/badge/RAG-%23444444.svg?&style=for-the-badge&logoColor=white" },
+  { name: "Prompt Engineering", badgeUrl: "https://img.shields.io/badge/Prompt%20Engineering-%23444444.svg?&style=for-the-badge&logoColor=white" },
+  { name: "TipTap", badgeUrl: "https://img.shields.io/badge/TipTap-%23000000.svg?&style=for-the-badge&logoColor=white" },
+  { name: "ProseMirror", badgeUrl: "https://img.shields.io/badge/ProseMirror-%23000000.svg?&style=for-the-badge&logoColor=white" },
+  { name: "Playwright", badgeUrl: "https://img.shields.io/badge/Playwright-%232EAD33.svg?&style=for-the-badge&logo=playwright&logoColor=white" },
+  { name: "Django", badgeUrl: "https://img.shields.io/badge/Django-%23092E20.svg?&style=for-the-badge&logo=django&logoColor=white" },
+  { name: "Google Classroom", badgeUrl: "https://img.shields.io/badge/Google%20Classroom-%230F9D58.svg?&style=for-the-badge&logo=googleclassroom&logoColor=white" },
+  { name: "Canvas LMS", badgeUrl: "https://img.shields.io/badge/Canvas%20LMS-%23E72429.svg?&style=for-the-badge&logo=instructure&logoColor=white" },
 ];
 
 // Portfolio Projects
@@ -214,4 +244,5 @@ export {
   socialprofils,
   logotext,
   growthStops,
+  offTheClock,
 };

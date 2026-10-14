@@ -1,0 +1,104 @@
+.hand {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 10px;
+    margin: 0 0 1.5rem;
+    min-height: 260px;
+}
+
+.hand_slot {
+    width: 150px;
+    margin: 0 -22px;
+    transform: rotate(var(--angle)) translateY(calc(var(--angle) * var(--angle) / 9deg));
+    transform-origin: 50% 130%;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), z-index 0s;
+    z-index: 1;
+}
+
+.hand_slot:hover,
+.hand_slot:focus-within {
+    transform: rotate(0deg) translateY(-26px);
+    z-index: 10;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 150px;
+    height: 210px;
+    padding: 16px 14px;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+a.card:hover,
+a.card:focus {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.card_icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.card_icon svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.card_title {
+    font-family: Marcellus, serif;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.card_blurb {
+    font-family: Raleway, sans-serif;
+    font-size: 11.5px;
+    line-height: 1.35;
+    opacity: 0.75;
+}
+
+.card_link {
+    margin-top: auto;
+    font-family: Raleway, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+@media (max-width: 991.98px) {
+    .hand {
+        flex-wrap: wrap;
+        gap: 14px;
+        min-height: 0;
+        padding-top: 10px;
+    }
+    .hand_slot {
+        margin: 0;
+        transform: none;
+    }
+    .hand_slot:hover {
+        transform: translateY(-6px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hand_slot {
+        transition: none;
+    }
+}
